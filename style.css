@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(8, 16, 44, 0.7), rgba(55, 59, 83, 0.7)), url(images/Church.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-colored {
+    background: rgb(20, 23, 36) !important;
+    transition: background-color 0.5 ease;
+}
+
+nav{
+    display: flex;
+    width: 65%;
+    padding: 0.2px 61% 2px 15%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+nav {
+    position: fixed;
+}
+
+
+
+nav img{
+    width: 120px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 18px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(190, 182, 182);
+    display: block;
+    margin: auto;
+    transition: 0,5;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    animation: 
+        typing 3s steps(26, end) forwards, 
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 24ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+}
+
+.text-box p{
+    margin: 14px 0px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+
+
+   /* ......about...... */
+
+
+.about-img {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(31, 34, 4, 0.6), rgba(20, 31, 68, 0.6)), url(images/worship.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;    
+    color: #fff;
+}
+
+.about-content {
+    max-width: 800px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 2s ease-out;
+}
+
+.about-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-content.appear{
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+.about-section {
+    background: black;
+}
+
+.about-leader h1{
+    font-size: 270%;
+    position: center;
+    padding: 50px 25% 30px 45%;
+    color: white;
+}
+
+.about-leader p{
+    text-align: left;
+    position: center;
+    padding: 10px 14% 15px 30%;
+    color: white;
+}
+
+.leader-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px; 
+    padding: 50px 10%;
+    background-color: #000;
+}
+
+.img-profile {
+    flex: 0 0 400px;
+}
+
+.img-profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.pastor-text {
+    flex: 1;
+    color: white;
+    text-align: left !important;
+    margin-left: 25px;
+}
+
+.pastor-text h3 {
+    font-size: 16px;
+    font-weight: 10; 
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-style: normal !important; 
+    font-family: sans-serif;
+}
+
+.pastor-text h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-style: normal !important;
+}
