@@ -230,3 +230,36 @@ nav img{
     margin-bottom: 50px;
     font-style: normal !important;
 }
+
+/* --- RESPONSIVE UNTUK HP --- */
+@media (max-width: 768px) {
+    
+    /* Section About Pastor */
+    .leader-container {
+        flex-direction: column; /* Foto di atas, teks di bawah */
+        align-items: center;    /* Semua jadi rata tengah */
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .img-profile {
+        flex: 0 0 auto;
+        width: 100%;        /* Foto memenuhi lebar layar HP */
+        max-width: 300px;   /* Tapi jangan kegedean juga */
+        margin-bottom: 20px;
+    }
+
+    .pastor-text {
+        text-align: center !important; /* Paksa teks ke tengah biar rapi di HP */
+    }
+
+    /* Section Contact Us */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column; /* First Name & Last Name jadi tumpuk vertikal */
+        gap: 10px;
+    }
+}
